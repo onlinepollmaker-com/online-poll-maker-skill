@@ -11,11 +11,18 @@ jobs:
       id-token: write
       contents: read
     steps:
-      - name: Download the manifest and publisher
+      - name: Check out the Skill repository
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          persist-credentials: false
+
+      - name: Download the verified publisher release
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          curl -fsSL --retry 2 "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_SHA}/server.json" -o server.json
-          curl -fsSL --retry 2 https://github.com/modelcontextprotocol/registry/releases/download/v1.8.8/mcp-publisher_linux_amd64.tar.gz -o publisher.tar.gz
+          gh api repos/modelcontextprotocol/registry/releases/assets/717387597 \
+            -H 'Accept: application/octet-stream' > publisher.tar.gz
           echo '09f1fa70ee146b640584274a1a6b2b8a0310b05d4321fa9224e6df6a016d67f4  publisher.tar.gz' | sha256sum -c
           tar -xzf publisher.tar.gz mcp-publisher
 
