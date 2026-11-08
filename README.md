@@ -18,7 +18,7 @@ You tell the agent what you want to ask. It writes the questions and options, cr
 
 **No install needed:** you can also just paste this prompt into any agent that can browse the web:
 
-> Read and follow https://onlinepollmaker.com/agents.md to help me create a poll on Online Poll Maker.
+> Read and follow https://onlinepollmaker.com/agents.md to help me create a poll on Online Poll Maker. Ask me what the poll is about.
 
 ## Use
 
@@ -60,7 +60,7 @@ The skill is a thin pointer. It tells the agent to read the official [agent guid
 
 **不安装也能用：** 把下面这句提示词粘贴给任何能上网的助手：
 
-> 请阅读并按照 https://onlinepollmaker.com/agents.md 帮我在 Online Poll Maker 上创建一个投票。
+> 请阅读并按照 https://onlinepollmaker.com/agents.md 帮我在 Online Poll Maker 上创建一个投票。先问我想做什么投票。
 
 ### 使用
 
