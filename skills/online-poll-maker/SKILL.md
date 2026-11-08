@@ -12,7 +12,7 @@ Prepare a poll **draft** on https://onlinepollmaker.com through its HTTP API. Th
 1. Fetch the agent guide: `https://onlinepollmaker.com/agents.md` — workflow, content rules, errors.
 2. Use the OpenAPI document for exact request and response formats: `https://onlinepollmaker.com/api/openapi.json`.
 
-Do not rely on remembered field names or limits; read them from those two URLs each time. If you cannot make HTTP requests in this environment, tell the user and help them write the poll content to paste into the website instead. Never invent links or claim something was saved.
+Do not rely on remembered field names or limits; read them from those two URLs each time. If you can't send POST requests in this environment, follow the guide's JSON import section: give the user the poll as JSON and tell them to use "Import from AI" on the website. Never invent links or claim something was saved.
 
 ## Workflow
 
