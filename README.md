@@ -10,7 +10,7 @@ You tell the agent what you want to ask. It writes the questions and options, cr
 
 **Easiest: let your agent do it.** Send this to an agent that supports skills (for example Claude Code):
 
-> Install the online-poll-maker skill from https://github.com/gangbo/online-poll-maker-skill (the file is `skills/online-poll-maker/SKILL.md`).
+> Install the online-poll-maker skill from https://github.com/onlinepollmaker-com/online-poll-maker-skill (the file is `skills/online-poll-maker/SKILL.md`).
 
 **Manually:** copy the `skills/online-poll-maker` folder into your agent's skills directory. For Claude Code that is `~/.claude/skills/online-poll-maker/`.
 
@@ -52,7 +52,7 @@ The skill is a thin pointer. It tells the agent to read the official [agent guid
 
 **最简单：让助手自己装。** 把这句话发给支持 Skill 的助手（例如 Claude Code）：
 
-> 请从 https://github.com/gangbo/online-poll-maker-skill 安装 online-poll-maker 这个 Skill（文件是 `skills/online-poll-maker/SKILL.md`）。
+> 请从 https://github.com/onlinepollmaker-com/online-poll-maker-skill 安装 online-poll-maker 这个 Skill（文件是 `skills/online-poll-maker/SKILL.md`）。
 
 **手动安装：** 把 `skills/online-poll-maker` 文件夹复制到助手的 Skill 目录。Claude Code 是 `~/.claude/skills/online-poll-maker/`。
 
