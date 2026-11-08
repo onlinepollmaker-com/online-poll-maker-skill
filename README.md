@@ -20,6 +20,20 @@ You tell the agent what you want to ask. It writes the questions and options, cr
 
 > Read and follow https://onlinepollmaker.com/agents.md to help me create a poll on Online Poll Maker. Ask me what the poll is about.
 
+## MCP server
+
+Prefer MCP? Add the remote server — no install, no sign-in:
+
+```
+https://onlinepollmaker.com/mcp
+```
+
+- **Claude Code:** `claude mcp add --transport http online-poll-maker https://onlinepollmaker.com/mcp`
+- **Claude Desktop / claude.ai:** Settings → Connectors → Add custom connector, and paste the URL.
+- **Cursor:** add `{ "mcpServers": { "online-poll-maker": { "url": "https://onlinepollmaker.com/mcp" } } }` to `mcp.json`.
+
+Tools: `create_poll_draft`, `get_poll_draft`, `update_poll_draft`. The agent can only create drafts; you publish in your browser. Registry metadata is in [server.json](server.json).
+
 ## Use
 
 After installing, just ask: *"Make a poll for my team: where should we eat on Friday — tacos, sushi or pizza?"*
@@ -61,6 +75,20 @@ The skill is a thin pointer. It tells the agent to read the official [agent guid
 **不安装也能用：** 把下面这句提示词粘贴给任何能上网的助手：
 
 > 请阅读并按照 https://onlinepollmaker.com/agents.md 帮我在 Online Poll Maker 上创建一个投票。先问我想做什么投票。
+
+### MCP 服务
+
+更习惯用 MCP？添加这个远程服务即可，无需安装和登录：
+
+```
+https://onlinepollmaker.com/mcp
+```
+
+- **Claude Code：** `claude mcp add --transport http online-poll-maker https://onlinepollmaker.com/mcp`
+- **Claude Desktop / claude.ai：** 设置 → 连接器 → 添加自定义连接器，填入上面的地址。
+- **Cursor：** 在 `mcp.json` 里加入 `{ "mcpServers": { "online-poll-maker": { "url": "https://onlinepollmaker.com/mcp" } } }`。
+
+工具：`create_poll_draft`、`get_poll_draft`、`update_poll_draft`。助手只能创建草稿，发布由你在浏览器里完成。
 
 ### 使用
 
